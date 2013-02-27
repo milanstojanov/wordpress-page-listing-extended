@@ -10,11 +10,11 @@
 
 class MS_Template {
 
-    public function __construct() {
+    function __construct() {
         $this->setHooks();
     }
 
-    public function setHooks() {
+    function setHooks() {
         // Hooks for displaying Template column in page listing        
         add_filter('manage_pages_columns', array($this, 'addColumn'));  
         add_action('manage_pages_custom_column', array($this,'displayTemplateColumn'), 10, 2);
