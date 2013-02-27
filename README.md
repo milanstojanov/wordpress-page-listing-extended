@@ -1,6 +1,6 @@
 ##WordPress page listing extended
 
-Have you ever managed a WordPress website with thousends of static pages? If so, you are probably familiar with page templates. 
+Have you ever managed a WordPress website with thousands of static pages? If so, you are probably familiar with page templates. 
 
 This plugin adresses one small problem that exists in default instalation - WordPress doesn't provide a column in page listing where you can find out what template is assigned to which page. 
 
