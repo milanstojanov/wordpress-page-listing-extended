@@ -40,6 +40,7 @@ class MS_Template {
         if ($column_name == 'template') {  
             $pageTemplate = $this->getPageTemplate($post_ID);  
             if ($pageTemplate) {  
+                echo 'Listing :';  
                 echo $pageTemplate;  
             }  
         }  
@@ -55,11 +56,11 @@ class MS_Template {
             echo '<select name="template">';
             echo '<option value="">Show all</option>';
             
-            $currTemplate = isset($_GET['template'])? $_GET['template']:'';
+            $currTemplate = isset($_GET['template'])? $_GET['template']:'' ;
 
             foreach ($templates as $template) {
                 echo "<option value={$template} ";
-                if($template == $currTemplate) { echo 'selected="selected"'; }
+                if($template == $currTemplate) { echo 'selected="selected"' ; }
                 echo ">" . $template ."</option>";                        
             }
             
